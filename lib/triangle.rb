@@ -39,4 +39,4 @@ class TriangleError < StandardError
 end
 
 myTriangle = Triangle.new(1,2,2)
-myTriangle.kind
+puts "hello"
