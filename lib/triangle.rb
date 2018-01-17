@@ -9,15 +9,15 @@ class Triangle
   end
 
   def inequality?
-    @side_one + @side_two > @side_three || @side_one + @side_three > @side_two || @side_two + @side_three > @side_one ? false : true 
+    @side_one + @side_two > @side_three || @side_one + @side_three > @side_two || @side_two + @side_three > @side_one ? false : true
   end
 
-  def valid_lengths? 
-    @side_one > 0 && @side_two > 0 && @side_three > 0 ? true : false 
+  def valid_lengths?
+    @side_one > 0 && @side_two > 0 && @side_three > 0 ? true : false
   end
 
   def kind
-    if inequality? == false && valid_lengths? 
+    if inequality? == false && valid_lengths?
         if @side_one == @side_two && @side_two == @side_three
           :equilateral
         elsif @side_one == @side_two && @side_one != @side_three || @side_one == @side_three && @side_one != @side_two || @side_two == @side_three && @side_two != @side_one
