@@ -10,14 +10,6 @@ class Triangle
 
   def kind
 
-    if @side_one == 0 || @side_two == 0 || @side_three == 0
-      begin
-       raise TriangleError
-     rescue TriangleError => error
-         puts error.message
-    end
-  end
-
     if @side_one > 0 && @side_two > 0 && @side_three > 0
       if @side_one == @side_two && @side_two == @side_three
         :equilateral
