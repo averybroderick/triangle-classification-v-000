@@ -37,3 +37,5 @@ class TriangleError < StandardError
    "Invalid triangle initialized"
   end
 end
+
+new Triangle(1,2,3)
