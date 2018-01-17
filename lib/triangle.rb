@@ -39,4 +39,4 @@ class TriangleError < StandardError
 end
 
 myTriangle = new Triangle(1,2,3)
-myTriangle
+myTriangle.kind
