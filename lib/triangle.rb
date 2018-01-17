@@ -38,4 +38,5 @@ class TriangleError < StandardError
   end
 end
 
-new Triangle(1,2,3)
+myTriangle = new Triangle(1,2,3)
+myTriangle
