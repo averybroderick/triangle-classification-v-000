@@ -12,9 +12,12 @@ class Triangle
     @side_one + @side_two > @side_three || @side_one + @side_three > @side_two || @side_two + @side_three > @side_one ? false : true 
   end
 
-  def kind
+  def valid_lengths? 
+    @side_one > 0 && @side_two > 0 && @side_three > 0 ? true : false 
+  end
 
-    if @side_one > 0 && @side_two > 0 && @side_three > 0 && @side_one + @side_two > @side_three || @side_one + @side_three > @side_two || @side_two + @side_three > @side_one
+  def kind
+    if inequality? == false && valid_lengths? 
         if @side_one == @side_two && @side_two == @side_three
           :equilateral
         elsif @side_one == @side_two && @side_one != @side_three || @side_one == @side_three && @side_one != @side_two || @side_two == @side_three && @side_two != @side_one
