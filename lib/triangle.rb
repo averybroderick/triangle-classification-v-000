@@ -37,6 +37,3 @@ class TriangleError < StandardError
    "Invalid triangle initialized"
   end
 end
-
-myTriangle = Triangle.new(1,2,3)
-puts myTriangle.kind
