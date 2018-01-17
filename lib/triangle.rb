@@ -21,5 +21,7 @@ class Triangle
 end
 
 class TriangleError < StandardError
- # triangle error code
+  def message
+   "Triangles with no size, negative sizes or those that violate traingle inequality are illegal!"
+  end
 end
