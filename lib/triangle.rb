@@ -38,5 +38,5 @@ class TriangleError < StandardError
   end
 end
 
-myTriangle = new Triangle(1,2,3)
+myTriangle = Triangle.new(1,2,2)
 myTriangle.kind
