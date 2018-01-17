@@ -8,6 +8,10 @@ class Triangle
     @side_three = side_three
   end
 
+  def inequality?
+    @side_one + @side_two > @side_three || @side_one + @side_three > @side_two || @side_two + @side_three > @side_one ? false : true 
+  end
+
   def kind
 
     if @side_one > 0 && @side_two > 0 && @side_three > 0 && @side_one + @side_two > @side_three || @side_one + @side_three > @side_two || @side_two + @side_three > @side_one
