@@ -9,7 +9,7 @@ class Triangle
   end
 
   def inequality?
-    @side_one + @side_two > @side_three || @side_one + @side_three > @side_two || @side_two + @side_three > @side_one ? false : true
+    @side_one + @side_two > @side_three && @side_one + @side_three > @side_two && @side_two + @side_three > @side_one ? false : true
   end
 
   def valid_lengths?
